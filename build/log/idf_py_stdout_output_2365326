@@ -1,0 +1,47 @@
+-- IDF_TARGET not set, using default target: esp32
+-- Found Git: /usr/bin/git (found version "2.34.1") 
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/seanshea/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/seanshea/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/seanshea/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/seanshea/esp_32_projects/clock-proto-1.0/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /home/seanshea/.espressif/python_env/idf5.2_py3.10_env/bin/python (found version "3.10.12") found components: Interpreter 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "clock-proto-1.0" version: 1
+-- Adding linker script /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/seanshea/esp/esp-idf/components/app_trace /home/seanshea/esp/esp-idf/components/app_update /home/seanshea/esp/esp-idf/components/bootloader /home/seanshea/esp/esp-idf/components/bootloader_support /home/seanshea/esp/esp-idf/components/bt /home/seanshea/esp/esp-idf/components/cmock /home/seanshea/esp/esp-idf/components/console /home/seanshea/esp/esp-idf/components/cxx /home/seanshea/esp/esp-idf/components/driver /home/seanshea/esp/esp-idf/components/efuse /home/seanshea/esp/esp-idf/components/esp-tls /home/seanshea/esp/esp-idf/components/esp_adc /home/seanshea/esp/esp-idf/components/esp_app_format /home/seanshea/esp/esp-idf/components/esp_bootloader_format /home/seanshea/esp/esp-idf/components/esp_coex /home/seanshea/esp/esp-idf/components/esp_common /home/seanshea/esp/esp-idf/components/esp_eth /home/seanshea/esp/esp-idf/components/esp_event /home/seanshea/esp/esp-idf/components/esp_gdbstub /home/seanshea/esp/esp-idf/components/esp_hid /home/seanshea/esp/esp-idf/components/esp_http_client /home/seanshea/esp/esp-idf/components/esp_http_server /home/seanshea/esp/esp-idf/components/esp_https_ota /home/seanshea/esp/esp-idf/components/esp_https_server /home/seanshea/esp/esp-idf/components/esp_hw_support /home/seanshea/esp/esp-idf/components/esp_lcd /home/seanshea/esp/esp-idf/components/esp_local_ctrl /home/seanshea/esp/esp-idf/components/esp_mm /home/seanshea/esp/esp-idf/components/esp_netif /home/seanshea/esp/esp-idf/components/esp_netif_stack /home/seanshea/esp/esp-idf/components/esp_partition /home/seanshea/esp/esp-idf/components/esp_phy /home/seanshea/esp/esp-idf/components/esp_pm /home/seanshea/esp/esp-idf/components/esp_psram /home/seanshea/esp/esp-idf/components/esp_ringbuf /home/seanshea/esp/esp-idf/components/esp_rom /home/seanshea/esp/esp-idf/components/esp_system /home/seanshea/esp/esp-idf/components/esp_timer /home/seanshea/esp/esp-idf/components/esp_wifi /home/seanshea/esp/esp-idf/components/espcoredump /home/seanshea/esp/esp-idf/components/esptool_py /home/seanshea/esp/esp-idf/components/fatfs /home/seanshea/esp/esp-idf/components/freertos /home/seanshea/esp/esp-idf/components/hal /home/seanshea/esp/esp-idf/components/heap /home/seanshea/esp/esp-idf/components/http_parser /home/seanshea/esp/esp-idf/components/idf_test /home/seanshea/esp/esp-idf/components/ieee802154 /home/seanshea/esp/esp-idf/components/json /home/seanshea/esp/esp-idf/components/log /home/seanshea/esp/esp-idf/components/lwip /home/seanshea/esp_32_projects/clock-proto-1.0/main /home/seanshea/esp/esp-idf/components/mbedtls /home/seanshea/esp/esp-idf/components/mqtt /home/seanshea/esp/esp-idf/components/newlib /home/seanshea/esp/esp-idf/components/nvs_flash /home/seanshea/esp/esp-idf/components/nvs_sec_provider /home/seanshea/esp/esp-idf/components/openthread /home/seanshea/esp/esp-idf/components/partition_table /home/seanshea/esp/esp-idf/components/perfmon /home/seanshea/esp/esp-idf/components/protobuf-c /home/seanshea/esp/esp-idf/components/protocomm /home/seanshea/esp/esp-idf/components/pthread /home/seanshea/esp/esp-idf/components/sdmmc /home/seanshea/esp/esp-idf/components/soc /home/seanshea/esp/esp-idf/components/spi_flash /home/seanshea/esp/esp-idf/components/spiffs /home/seanshea/esp/esp-idf/components/tcp_transport /home/seanshea/esp/esp-idf/components/ulp /home/seanshea/esp/esp-idf/components/unity /home/seanshea/esp/esp-idf/components/usb /home/seanshea/esp/esp-idf/components/vfs /home/seanshea/esp/esp-idf/components/wear_levelling /home/seanshea/esp/esp-idf/components/wifi_provisioning /home/seanshea/esp/esp-idf/components/wpa_supplicant /home/seanshea/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/seanshea/esp_32_projects/clock-proto-1.0/build

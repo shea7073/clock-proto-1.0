@@ -1,0 +1,12 @@
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c: In function 'app_main':
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:11:21: error: implicit declaration of function 'wifi_connect_sta'; did you mean 'wifi_connect_init'? [-Werror=implicit-function-declaration]
+   11 |     esp_err_t err = wifi_connect_sta("ssid", "password", 10000);
+      |                     ^~~~~~~~~~~~~~~~
+      |                     wifi_connect_init
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:11:15: warning: unused variable 'err' [-Wunused-variable]
+   11 |     esp_err_t err = wifi_connect_sta("ssid", "password", 10000);
+      |               ^~~
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4586: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

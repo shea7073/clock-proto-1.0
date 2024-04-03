@@ -1,0 +1,11 @@
+file(REMOVE_RECURSE
+  "config/sdkconfig.h"
+  "config/sdkconfig.cmake"
+  "bootloader/bootloader.elf"
+  "bootloader/bootloader.bin"
+  "bootloader/bootloader.map"
+  "clock-proto-1.0.bin"
+  "flash_project_args"
+  "clock-proto-1.0.map"
+  "project_elf_src_esp32.c"
+)

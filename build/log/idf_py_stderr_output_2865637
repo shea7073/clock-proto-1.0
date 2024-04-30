@@ -1,0 +1,23 @@
+In file included from /home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:9:
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c: In function 'obtain_time':
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:43:62: error: 'CONFIG_SNTP_TIME_SERVER' undeclared (first use in this function); did you mean 'CONFIG_MBEDTLS_TLS_SERVER'?
+   43 |     esp_sntp_config_t config = ESP_NETIF_SNTP_DEFAULT_CONFIG(CONFIG_SNTP_TIME_SERVER);
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~~
+/home/seanshea/esp/esp-idf/components/esp_netif/include/esp_netif_sntp.h:56:24: note: in definition of macro 'ESP_NETIF_SNTP_DEFAULT_CONFIG_MULTIPLE'
+   56 |             .servers = list_of_servers,                 \
+      |                        ^~~~~~~~~~~~~~~
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:43:32: note: in expansion of macro 'ESP_NETIF_SNTP_DEFAULT_CONFIG'
+   43 |     esp_sntp_config_t config = ESP_NETIF_SNTP_DEFAULT_CONFIG(CONFIG_SNTP_TIME_SERVER);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:43:62: note: each undeclared identifier is reported only once for each function it appears in
+   43 |     esp_sntp_config_t config = ESP_NETIF_SNTP_DEFAULT_CONFIG(CONFIG_SNTP_TIME_SERVER);
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~~
+/home/seanshea/esp/esp-idf/components/esp_netif/include/esp_netif_sntp.h:56:24: note: in definition of macro 'ESP_NETIF_SNTP_DEFAULT_CONFIG_MULTIPLE'
+   56 |             .servers = list_of_servers,                 \
+      |                        ^~~~~~~~~~~~~~~
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:43:32: note: in expansion of macro 'ESP_NETIF_SNTP_DEFAULT_CONFIG'
+   43 |     esp_sntp_config_t config = ESP_NETIF_SNTP_DEFAULT_CONFIG(CONFIG_SNTP_TIME_SERVER);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/build.make:76: esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/clock_manager.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4682: esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

@@ -1,0 +1,16 @@
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c: In function 'app_main':
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:144:26: error: invalid initializer
+  144 |     const char* path[] = "/sdcard/index.html";
+      |                          ^~~~~~~~~~~~~~~~~~~~
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:146:24: warning: passing argument 1 of 'fopen' from incompatible pointer type [-Wincompatible-pointer-types]
+  146 |     FILE *file = fopen(path, "r");
+      |                        ^~~~
+      |                        |
+      |                        const char **
+In file included from /home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:1:
+/home/seanshea/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/stdio.h:249:39: note: expected 'const char * restrict' but argument is of type 'const char **'
+  249 | FILE *  fopen (const char *__restrict _name, const char *__restrict _type);
+      |                ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4656: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

@@ -1,0 +1,19 @@
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c: In function 'app_main':
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:144:33: error: expected ')' before string constant
+  144 |     FILE *file = fopen(BASE_PATH"/index.html", "r");
+      |                       ~         ^~~~~~~~~~~~~
+      |                                 )
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:144:18: error: too few arguments to function 'fopen'
+  144 |     FILE *file = fopen(BASE_PATH"/index.html", "r");
+      |                  ^~~~~
+In file included from /home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:1:
+/home/seanshea/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/stdio.h:249:9: note: declared here
+  249 | FILE *  fopen (const char *__restrict _name, const char *__restrict _type);
+      |         ^~~~~
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c: At top level:
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:80:13: warning: 'init_server' defined but not used [-Wunused-function]
+   80 | static void init_server() {
+      |             ^~~~~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4656: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

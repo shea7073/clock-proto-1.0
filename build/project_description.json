@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "clock-proto-1.0",
-    "project_version":    "1",
+    "project_version":    "2cab9a6-dirty",
     "project_path":       "/home/seanshea/esp_32_projects/clock-proto-1.0",
     "idf_path":           "/home/seanshea/esp/esp-idf",
     "build_dir":          "/home/seanshea/esp_32_projects/clock-proto-1.0/build",
@@ -21,12 +21,12 @@
     "monitor_toolprefix": "xtensa-esp32-elf-",
     "c_compiler":         "/home/seanshea/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "/home/seanshea/esp/esp-idf/components/app_trace/Kconfig;/home/seanshea/esp/esp-idf/components/bt/Kconfig;/home/seanshea/esp/esp-idf/components/driver/Kconfig;/home/seanshea/esp/esp-idf/components/efuse/Kconfig;/home/seanshea/esp/esp-idf/components/esp-tls/Kconfig;/home/seanshea/esp/esp-idf/components/esp_adc/Kconfig;/home/seanshea/esp/esp-idf/components/esp_coex/Kconfig;/home/seanshea/esp/esp-idf/components/esp_common/Kconfig;/home/seanshea/esp/esp-idf/components/esp_eth/Kconfig;/home/seanshea/esp/esp-idf/components/esp_event/Kconfig;/home/seanshea/esp/esp-idf/components/esp_gdbstub/Kconfig;/home/seanshea/esp/esp-idf/components/esp_http_client/Kconfig;/home/seanshea/esp/esp-idf/components/esp_http_server/Kconfig;/home/seanshea/esp/esp-idf/components/esp_https_ota/Kconfig;/home/seanshea/esp/esp-idf/components/esp_https_server/Kconfig;/home/seanshea/esp/esp-idf/components/esp_hw_support/Kconfig;/home/seanshea/esp/esp-idf/components/esp_lcd/Kconfig;/home/seanshea/esp/esp-idf/components/esp_netif/Kconfig;/home/seanshea/esp/esp-idf/components/esp_partition/Kconfig;/home/seanshea/esp/esp-idf/components/esp_phy/Kconfig;/home/seanshea/esp/esp-idf/components/esp_pm/Kconfig;/home/seanshea/esp/esp-idf/components/esp_psram/Kconfig;/home/seanshea/esp/esp-idf/components/esp_ringbuf/Kconfig;/home/seanshea/esp/esp-idf/components/esp_system/Kconfig;/home/seanshea/esp/esp-idf/components/esp_timer/Kconfig;/home/seanshea/esp/esp-idf/components/esp_wifi/Kconfig;/home/seanshea/esp/esp-idf/components/espcoredump/Kconfig;/home/seanshea/esp/esp-idf/components/fatfs/Kconfig;/home/seanshea/esp/esp-idf/components/freertos/Kconfig;/home/seanshea/esp/esp-idf/components/hal/Kconfig;/home/seanshea/esp/esp-idf/components/heap/Kconfig;/home/seanshea/esp/esp-idf/components/ieee802154/Kconfig;/home/seanshea/esp/esp-idf/components/log/Kconfig;/home/seanshea/esp/esp-idf/components/lwip/Kconfig;/home/seanshea/esp/esp-idf/components/mbedtls/Kconfig;/home/seanshea/esp/esp-idf/components/mqtt/esp-mqtt/Kconfig;/home/seanshea/esp/esp-idf/components/newlib/Kconfig;/home/seanshea/esp/esp-idf/components/nvs_flash/Kconfig;/home/seanshea/esp/esp-idf/components/nvs_sec_provider/Kconfig;/home/seanshea/esp/esp-idf/components/openthread/Kconfig;/home/seanshea/esp/esp-idf/components/protocomm/Kconfig;/home/seanshea/esp/esp-idf/components/pthread/Kconfig;/home/seanshea/esp/esp-idf/components/soc/Kconfig;/home/seanshea/esp/esp-idf/components/spi_flash/Kconfig;/home/seanshea/esp/esp-idf/components/spiffs/Kconfig;/home/seanshea/esp/esp-idf/components/tcp_transport/Kconfig;/home/seanshea/esp/esp-idf/components/ulp/Kconfig;/home/seanshea/esp/esp-idf/components/unity/Kconfig;/home/seanshea/esp/esp-idf/components/usb/Kconfig;/home/seanshea/esp/esp-idf/components/vfs/Kconfig;/home/seanshea/esp/esp-idf/components/wear_levelling/Kconfig;/home/seanshea/esp/esp-idf/components/wifi_provisioning/Kconfig",
+        "COMPONENT_KCONFIGS" : "/home/seanshea/esp/esp-idf/components/app_trace/Kconfig;/home/seanshea/esp/esp-idf/components/bt/Kconfig;/home/seanshea/esp/esp-idf/components/driver/Kconfig;/home/seanshea/esp/esp-idf/components/efuse/Kconfig;/home/seanshea/esp/esp-idf/components/esp-tls/Kconfig;/home/seanshea/esp/esp-idf/components/esp_adc/Kconfig;/home/seanshea/esp/esp-idf/components/esp_coex/Kconfig;/home/seanshea/esp/esp-idf/components/esp_common/Kconfig;/home/seanshea/esp/esp-idf/components/esp_eth/Kconfig;/home/seanshea/esp/esp-idf/components/esp_event/Kconfig;/home/seanshea/esp/esp-idf/components/esp_gdbstub/Kconfig;/home/seanshea/esp/esp-idf/components/esp_http_client/Kconfig;/home/seanshea/esp/esp-idf/components/esp_http_server/Kconfig;/home/seanshea/esp/esp-idf/components/esp_https_ota/Kconfig;/home/seanshea/esp/esp-idf/components/esp_https_server/Kconfig;/home/seanshea/esp/esp-idf/components/esp_hw_support/Kconfig;/home/seanshea/esp/esp-idf/components/esp_lcd/Kconfig;/home/seanshea/esp/esp-idf/components/esp_netif/Kconfig;/home/seanshea/esp/esp-idf/components/esp_partition/Kconfig;/home/seanshea/esp/esp-idf/components/esp_phy/Kconfig;/home/seanshea/esp/esp-idf/components/esp_pm/Kconfig;/home/seanshea/esp/esp-idf/components/esp_psram/Kconfig;/home/seanshea/esp/esp-idf/components/esp_ringbuf/Kconfig;/home/seanshea/esp/esp-idf/components/esp_system/Kconfig;/home/seanshea/esp/esp-idf/components/esp_timer/Kconfig;/home/seanshea/esp/esp-idf/components/esp_wifi/Kconfig;/home/seanshea/esp/esp-idf/components/espcoredump/Kconfig;/home/seanshea/esp/esp-idf/components/fatfs/Kconfig;/home/seanshea/esp/esp-idf/components/freertos/Kconfig;/home/seanshea/esp/esp-idf/components/hal/Kconfig;/home/seanshea/esp/esp-idf/components/heap/Kconfig;/home/seanshea/esp/esp-idf/components/ieee802154/Kconfig;/home/seanshea/esp/esp-idf/components/log/Kconfig;/home/seanshea/esp/esp-idf/components/lwip/Kconfig;/home/seanshea/esp/esp-idf/components/mbedtls/Kconfig;/home/seanshea/esp/esp-idf/components/mqtt/esp-mqtt/Kconfig;/home/seanshea/esp/esp-idf/components/newlib/Kconfig;/home/seanshea/esp/esp-idf/components/nvs_flash/Kconfig;/home/seanshea/esp/esp-idf/components/nvs_sec_provider/Kconfig;/home/seanshea/esp/esp-idf/components/openthread/Kconfig;/home/seanshea/esp/esp-idf/components/protocomm/Kconfig;/home/seanshea/esp/esp-idf/components/pthread/Kconfig;/home/seanshea/esp/esp-idf/components/soc/Kconfig;/home/seanshea/esp/esp-idf/components/spi_flash/Kconfig;/home/seanshea/esp/esp-idf/components/spiffs/Kconfig;/home/seanshea/esp/esp-idf/components/tcp_transport/Kconfig;/home/seanshea/esp/esp-idf/components/ulp/Kconfig;/home/seanshea/esp/esp-idf/components/unity/Kconfig;/home/seanshea/esp/esp-idf/components/usb/Kconfig;/home/seanshea/esp/esp-idf/components/vfs/Kconfig;/home/seanshea/esp/esp-idf/components/wear_levelling/Kconfig;/home/seanshea/esp/esp-idf/components/wifi_provisioning/Kconfig;/home/seanshea/esp_32_projects/clock-proto-1.0/managed_components/espressif__mdns/Kconfig",
         "COMPONENT_KCONFIGS_PROJBUILD" : "/home/seanshea/esp/esp-idf/components/bootloader/Kconfig.projbuild;/home/seanshea/esp/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/seanshea/esp/esp-idf/components/esp_rom/Kconfig.projbuild;/home/seanshea/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/home/seanshea/esp/esp-idf/components/partition_table/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
-    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "cmock", "console", "cxx", "driver", "efuse", "esp-tls", "esp_adc", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_eth", "esp_event", "esp_gdbstub", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_system", "esp_timer", "esp_wifi", "espcoredump", "esptool_py", "fatfs", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "json", "log", "lwip", "main", "mbedtls", "mqtt", "newlib", "nvs_flash", "nvs_sec_provider", "openthread", "partition_table", "perfmon", "protobuf-c", "protocomm", "pthread", "sdmmc", "soc", "spi_flash", "spiffs", "tcp_transport", "ulp", "unity", "usb", "vfs", "wear_levelling", "wifi_connect", "wifi_provisioning", "wpa_supplicant", "xtensa", "" ],
-    "build_component_paths" : [ "/home/seanshea/esp/esp-idf/components/app_trace", "/home/seanshea/esp/esp-idf/components/app_update", "/home/seanshea/esp/esp-idf/components/bootloader", "/home/seanshea/esp/esp-idf/components/bootloader_support", "/home/seanshea/esp/esp-idf/components/bt", "/home/seanshea/esp/esp-idf/components/cmock", "/home/seanshea/esp/esp-idf/components/console", "/home/seanshea/esp/esp-idf/components/cxx", "/home/seanshea/esp/esp-idf/components/driver", "/home/seanshea/esp/esp-idf/components/efuse", "/home/seanshea/esp/esp-idf/components/esp-tls", "/home/seanshea/esp/esp-idf/components/esp_adc", "/home/seanshea/esp/esp-idf/components/esp_app_format", "/home/seanshea/esp/esp-idf/components/esp_bootloader_format", "/home/seanshea/esp/esp-idf/components/esp_coex", "/home/seanshea/esp/esp-idf/components/esp_common", "/home/seanshea/esp/esp-idf/components/esp_eth", "/home/seanshea/esp/esp-idf/components/esp_event", "/home/seanshea/esp/esp-idf/components/esp_gdbstub", "/home/seanshea/esp/esp-idf/components/esp_hid", "/home/seanshea/esp/esp-idf/components/esp_http_client", "/home/seanshea/esp/esp-idf/components/esp_http_server", "/home/seanshea/esp/esp-idf/components/esp_https_ota", "/home/seanshea/esp/esp-idf/components/esp_https_server", "/home/seanshea/esp/esp-idf/components/esp_hw_support", "/home/seanshea/esp/esp-idf/components/esp_lcd", "/home/seanshea/esp/esp-idf/components/esp_local_ctrl", "/home/seanshea/esp/esp-idf/components/esp_mm", "/home/seanshea/esp/esp-idf/components/esp_netif", "/home/seanshea/esp/esp-idf/components/esp_netif_stack", "/home/seanshea/esp/esp-idf/components/esp_partition", "/home/seanshea/esp/esp-idf/components/esp_phy", "/home/seanshea/esp/esp-idf/components/esp_pm", "/home/seanshea/esp/esp-idf/components/esp_psram", "/home/seanshea/esp/esp-idf/components/esp_ringbuf", "/home/seanshea/esp/esp-idf/components/esp_rom", "/home/seanshea/esp/esp-idf/components/esp_system", "/home/seanshea/esp/esp-idf/components/esp_timer", "/home/seanshea/esp/esp-idf/components/esp_wifi", "/home/seanshea/esp/esp-idf/components/espcoredump", "/home/seanshea/esp/esp-idf/components/esptool_py", "/home/seanshea/esp/esp-idf/components/fatfs", "/home/seanshea/esp/esp-idf/components/freertos", "/home/seanshea/esp/esp-idf/components/hal", "/home/seanshea/esp/esp-idf/components/heap", "/home/seanshea/esp/esp-idf/components/http_parser", "/home/seanshea/esp/esp-idf/components/idf_test", "/home/seanshea/esp/esp-idf/components/ieee802154", "/home/seanshea/esp/esp-idf/components/json", "/home/seanshea/esp/esp-idf/components/log", "/home/seanshea/esp/esp-idf/components/lwip", "/home/seanshea/esp_32_projects/clock-proto-1.0/main", "/home/seanshea/esp/esp-idf/components/mbedtls", "/home/seanshea/esp/esp-idf/components/mqtt", "/home/seanshea/esp/esp-idf/components/newlib", "/home/seanshea/esp/esp-idf/components/nvs_flash", "/home/seanshea/esp/esp-idf/components/nvs_sec_provider", "/home/seanshea/esp/esp-idf/components/openthread", "/home/seanshea/esp/esp-idf/components/partition_table", "/home/seanshea/esp/esp-idf/components/perfmon", "/home/seanshea/esp/esp-idf/components/protobuf-c", "/home/seanshea/esp/esp-idf/components/protocomm", "/home/seanshea/esp/esp-idf/components/pthread", "/home/seanshea/esp/esp-idf/components/sdmmc", "/home/seanshea/esp/esp-idf/components/soc", "/home/seanshea/esp/esp-idf/components/spi_flash", "/home/seanshea/esp/esp-idf/components/spiffs", "/home/seanshea/esp/esp-idf/components/tcp_transport", "/home/seanshea/esp/esp-idf/components/ulp", "/home/seanshea/esp/esp-idf/components/unity", "/home/seanshea/esp/esp-idf/components/usb", "/home/seanshea/esp/esp-idf/components/vfs", "/home/seanshea/esp/esp-idf/components/wear_levelling", "/home/seanshea/esp_32_projects/clock-proto-1.0/components/wifi_connect", "/home/seanshea/esp/esp-idf/components/wifi_provisioning", "/home/seanshea/esp/esp-idf/components/wpa_supplicant", "/home/seanshea/esp/esp-idf/components/xtensa", "" ],
+    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "clock_manager", "cmock", "console", "cxx", "driver", "efuse", "esp-tls", "esp_adc", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_eth", "esp_event", "esp_gdbstub", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_system", "esp_timer", "esp_wifi", "espcoredump", "espressif__mdns", "esptool_py", "fatfs", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "json", "log", "lwip", "main", "mbedtls", "mqtt", "newlib", "nvs_flash", "nvs_sec_provider", "openthread", "partition_table", "perfmon", "protobuf-c", "protocomm", "pthread", "sdmmc", "soc", "spi_flash", "spiffs", "tcp_transport", "ulp", "unity", "usb", "vfs", "wear_levelling", "wifi_connect", "wifi_provisioning", "wpa_supplicant", "xtensa", "" ],
+    "build_component_paths" : [ "/home/seanshea/esp/esp-idf/components/app_trace", "/home/seanshea/esp/esp-idf/components/app_update", "/home/seanshea/esp/esp-idf/components/bootloader", "/home/seanshea/esp/esp-idf/components/bootloader_support", "/home/seanshea/esp/esp-idf/components/bt", "/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager", "/home/seanshea/esp/esp-idf/components/cmock", "/home/seanshea/esp/esp-idf/components/console", "/home/seanshea/esp/esp-idf/components/cxx", "/home/seanshea/esp/esp-idf/components/driver", "/home/seanshea/esp/esp-idf/components/efuse", "/home/seanshea/esp/esp-idf/components/esp-tls", "/home/seanshea/esp/esp-idf/components/esp_adc", "/home/seanshea/esp/esp-idf/components/esp_app_format", "/home/seanshea/esp/esp-idf/components/esp_bootloader_format", "/home/seanshea/esp/esp-idf/components/esp_coex", "/home/seanshea/esp/esp-idf/components/esp_common", "/home/seanshea/esp/esp-idf/components/esp_eth", "/home/seanshea/esp/esp-idf/components/esp_event", "/home/seanshea/esp/esp-idf/components/esp_gdbstub", "/home/seanshea/esp/esp-idf/components/esp_hid", "/home/seanshea/esp/esp-idf/components/esp_http_client", "/home/seanshea/esp/esp-idf/components/esp_http_server", "/home/seanshea/esp/esp-idf/components/esp_https_ota", "/home/seanshea/esp/esp-idf/components/esp_https_server", "/home/seanshea/esp/esp-idf/components/esp_hw_support", "/home/seanshea/esp/esp-idf/components/esp_lcd", "/home/seanshea/esp/esp-idf/components/esp_local_ctrl", "/home/seanshea/esp/esp-idf/components/esp_mm", "/home/seanshea/esp/esp-idf/components/esp_netif", "/home/seanshea/esp/esp-idf/components/esp_netif_stack", "/home/seanshea/esp/esp-idf/components/esp_partition", "/home/seanshea/esp/esp-idf/components/esp_phy", "/home/seanshea/esp/esp-idf/components/esp_pm", "/home/seanshea/esp/esp-idf/components/esp_psram", "/home/seanshea/esp/esp-idf/components/esp_ringbuf", "/home/seanshea/esp/esp-idf/components/esp_rom", "/home/seanshea/esp/esp-idf/components/esp_system", "/home/seanshea/esp/esp-idf/components/esp_timer", "/home/seanshea/esp/esp-idf/components/esp_wifi", "/home/seanshea/esp/esp-idf/components/espcoredump", "/home/seanshea/esp_32_projects/clock-proto-1.0/managed_components/espressif__mdns", "/home/seanshea/esp/esp-idf/components/esptool_py", "/home/seanshea/esp/esp-idf/components/fatfs", "/home/seanshea/esp/esp-idf/components/freertos", "/home/seanshea/esp/esp-idf/components/hal", "/home/seanshea/esp/esp-idf/components/heap", "/home/seanshea/esp/esp-idf/components/http_parser", "/home/seanshea/esp/esp-idf/components/idf_test", "/home/seanshea/esp/esp-idf/components/ieee802154", "/home/seanshea/esp/esp-idf/components/json", "/home/seanshea/esp/esp-idf/components/log", "/home/seanshea/esp/esp-idf/components/lwip", "/home/seanshea/esp_32_projects/clock-proto-1.0/main", "/home/seanshea/esp/esp-idf/components/mbedtls", "/home/seanshea/esp/esp-idf/components/mqtt", "/home/seanshea/esp/esp-idf/components/newlib", "/home/seanshea/esp/esp-idf/components/nvs_flash", "/home/seanshea/esp/esp-idf/components/nvs_sec_provider", "/home/seanshea/esp/esp-idf/components/openthread", "/home/seanshea/esp/esp-idf/components/partition_table", "/home/seanshea/esp/esp-idf/components/perfmon", "/home/seanshea/esp/esp-idf/components/protobuf-c", "/home/seanshea/esp/esp-idf/components/protocomm", "/home/seanshea/esp/esp-idf/components/pthread", "/home/seanshea/esp/esp-idf/components/sdmmc", "/home/seanshea/esp/esp-idf/components/soc", "/home/seanshea/esp/esp-idf/components/spi_flash", "/home/seanshea/esp/esp-idf/components/spiffs", "/home/seanshea/esp/esp-idf/components/tcp_transport", "/home/seanshea/esp/esp-idf/components/ulp", "/home/seanshea/esp/esp-idf/components/unity", "/home/seanshea/esp/esp-idf/components/usb", "/home/seanshea/esp/esp-idf/components/vfs", "/home/seanshea/esp/esp-idf/components/wear_levelling", "/home/seanshea/esp_32_projects/clock-proto-1.0/components/wifi_connect", "/home/seanshea/esp/esp-idf/components/wifi_provisioning", "/home/seanshea/esp/esp-idf/components/wpa_supplicant", "/home/seanshea/esp/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_trace": {
             "alias": "idf::app_trace",
@@ -102,6 +102,21 @@
             "file": "",
             "sources": [],
             "include_dirs": []
+        },
+        "clock_manager": {
+            "alias": "idf::clock_manager",
+            "target": "___idf_clock_manager",
+            "prefix": "idf",
+            "dir": "/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager",
+            "type": "LIBRARY",
+            "lib": "__idf_clock_manager",
+            "reqs": [ "log", "esp_netif" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/clock_manager/libclock_manager.a",
+            "sources": [ "/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c" ],
+            "include_dirs": [ "." ]
         },
         "cmock": {
             "alias": "idf::cmock",
@@ -628,6 +643,21 @@
             "sources": [ "/home/seanshea/esp/esp-idf/components/espcoredump/src/core_dump_common.c", "/home/seanshea/esp/esp-idf/components/espcoredump/src/core_dump_checksum.c", "/home/seanshea/esp/esp-idf/components/espcoredump/src/core_dump_flash.c", "/home/seanshea/esp/esp-idf/components/espcoredump/src/core_dump_uart.c", "/home/seanshea/esp/esp-idf/components/espcoredump/src/core_dump_elf.c", "/home/seanshea/esp/esp-idf/components/espcoredump/src/core_dump_binary.c", "/home/seanshea/esp/esp-idf/components/espcoredump/src/port/xtensa/core_dump_port.c" ],
             "include_dirs": [ "include", "include/port/xtensa" ]
         },
+        "espressif__mdns": {
+            "alias": "idf::espressif__mdns",
+            "target": "___idf_espressif__mdns",
+            "prefix": "idf",
+            "dir": "/home/seanshea/esp_32_projects/clock-proto-1.0/managed_components/espressif__mdns",
+            "type": "LIBRARY",
+            "lib": "__idf_espressif__mdns",
+            "reqs": [ "lwip", "console", "esp_netif" ],
+            "priv_reqs": [ "esp_timer", "esp_wifi" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/espressif__mdns/libespressif__mdns.a",
+            "sources": [ "/home/seanshea/esp_32_projects/clock-proto-1.0/managed_components/espressif__mdns/mdns.c", "/home/seanshea/esp_32_projects/clock-proto-1.0/managed_components/espressif__mdns/mdns_networking_lwip.c", "/home/seanshea/esp_32_projects/clock-proto-1.0/managed_components/espressif__mdns/mdns_console.c" ],
+            "include_dirs": [ "include" ]
+        },
         "esptool_py": {
             "alias": "idf::esptool_py",
             "target": "___idf_esptool_py",
@@ -801,9 +831,9 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "espressif__mdns" ],
             "managed_reqs": [],
-            "managed_priv_reqs": [],
+            "managed_priv_reqs": [ "espressif__mdns" ],
             "file": "/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/main/libmain.a",
             "sources": [ "/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c" ],
             "include_dirs": [ "." ]
@@ -2128,6 +2158,18 @@
             "dir": "/home/seanshea/esp_32_projects/clock-proto-1.0/main",
             "lib": "__idf_main",
             "reqs": [],
+            "priv_reqs": [ "espressif__mdns" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [ "espressif__mdns" ],
+            "include_dirs": [ "." ]
+        },
+        "clock_manager": {
+            "alias": "idf::clock_manager",
+            "target": "___idf_clock_manager",
+            "prefix": "idf",
+            "dir": "/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager",
+            "lib": "__idf_clock_manager",
+            "reqs": [ "log", "esp_netif" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -2144,6 +2186,18 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "." ]
+        },
+        "espressif__mdns": {
+            "alias": "idf::espressif__mdns",
+            "target": "___idf_espressif__mdns",
+            "prefix": "idf",
+            "dir": "/home/seanshea/esp_32_projects/clock-proto-1.0/managed_components/espressif__mdns",
+            "lib": "__idf_espressif__mdns",
+            "reqs": [ "lwip", "console", "esp_netif" ],
+            "priv_reqs": [ "esp_timer", "esp_wifi" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
         }
     },
     "debug_prefix_map_gdbinit": ""

@@ -1,0 +1,10 @@
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/wifi_connect/wifi_connect.c: In function 'wifi_connect_sta':
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/wifi_connect/wifi_connect.c:71:5: error: implicit declaration of function 'strncopy'; did you mean 'strncpy'? [-Werror=implicit-function-declaration]
+   71 |     strncopy((char*)wifi_config.sta.ssid, ssid, sizeof(wifi_config.sta.ssid)-1);
+      |     ^~~~~~~~
+      |     strncpy
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/wifi_connect/CMakeFiles/__idf_wifi_connect.dir/build.make:76: esp-idf/wifi_connect/CMakeFiles/__idf_wifi_connect.dir/wifi_connect.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4612: esp-idf/wifi_connect/CMakeFiles/__idf_wifi_connect.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:136: all] Error 2

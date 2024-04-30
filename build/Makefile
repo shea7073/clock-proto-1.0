@@ -1566,6 +1566,19 @@ __idf_wifi_provisioning/fast:
 .PHONY : __idf_wifi_provisioning/fast
 
 #=============================================================================
+# Target rules for targets named __idf_espressif__mdns
+
+# Build rule for target.
+__idf_espressif__mdns: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_espressif__mdns
+.PHONY : __idf_espressif__mdns
+
+# fast build rule for target.
+__idf_espressif__mdns/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/espressif__mdns/CMakeFiles/__idf_espressif__mdns.dir/build.make esp-idf/espressif__mdns/CMakeFiles/__idf_espressif__mdns.dir/build
+.PHONY : __idf_espressif__mdns/fast
+
+#=============================================================================
 # Target rules for targets named __idf_main
 
 # Build rule for target.
@@ -1577,6 +1590,19 @@ __idf_main: cmake_check_build_system
 __idf_main/fast:
 	$(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/build
 .PHONY : __idf_main/fast
+
+#=============================================================================
+# Target rules for targets named __idf_clock_manager
+
+# Build rule for target.
+__idf_clock_manager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_clock_manager
+.PHONY : __idf_clock_manager
+
+# fast build rule for target.
+__idf_clock_manager/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/build.make esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/build
+.PHONY : __idf_clock_manager/fast
 
 #=============================================================================
 # Target rules for targets named __idf_wifi_connect
@@ -1669,6 +1695,7 @@ help:
 	@echo "... __idf_app_trace"
 	@echo "... __idf_app_update"
 	@echo "... __idf_bootloader_support"
+	@echo "... __idf_clock_manager"
 	@echo "... __idf_cmock"
 	@echo "... __idf_console"
 	@echo "... __idf_cxx"
@@ -1701,6 +1728,7 @@ help:
 	@echo "... __idf_esp_timer"
 	@echo "... __idf_esp_wifi"
 	@echo "... __idf_espcoredump"
+	@echo "... __idf_espressif__mdns"
 	@echo "... __idf_fatfs"
 	@echo "... __idf_freertos"
 	@echo "... __idf_hal"

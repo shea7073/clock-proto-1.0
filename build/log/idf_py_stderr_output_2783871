@@ -1,0 +1,4 @@
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c: In function 'on_default_url':
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:36:11: warning: unused variable 'ext' [-Wunused-variable]
+   36 |     char *ext = strrchr(req->uri, '.');
+      |           ^~~

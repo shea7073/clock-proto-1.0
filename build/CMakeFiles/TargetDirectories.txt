@@ -628,6 +628,13 @@
 /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/wifi_provisioning/CMakeFiles/install.dir
 /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/wifi_provisioning/CMakeFiles/install/local.dir
 /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/wifi_provisioning/CMakeFiles/install/strip.dir
+/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/espressif__mdns/CMakeFiles/__idf_espressif__mdns.dir
+/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/espressif__mdns/CMakeFiles/edit_cache.dir
+/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/espressif__mdns/CMakeFiles/rebuild_cache.dir
+/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/espressif__mdns/CMakeFiles/list_install_components.dir
+/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/espressif__mdns/CMakeFiles/install.dir
+/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/espressif__mdns/CMakeFiles/install/local.dir
+/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/espressif__mdns/CMakeFiles/install/strip.dir
 /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/main/CMakeFiles/__idf_main.dir
 /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/main/CMakeFiles/edit_cache.dir
 /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/main/CMakeFiles/rebuild_cache.dir
@@ -635,6 +642,13 @@
 /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/main/CMakeFiles/install.dir
 /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/main/CMakeFiles/install/local.dir
 /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/main/CMakeFiles/install/strip.dir
+/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir
+/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/clock_manager/CMakeFiles/edit_cache.dir
+/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/clock_manager/CMakeFiles/rebuild_cache.dir
+/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/clock_manager/CMakeFiles/list_install_components.dir
+/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/clock_manager/CMakeFiles/install.dir
+/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/clock_manager/CMakeFiles/install/local.dir
+/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/clock_manager/CMakeFiles/install/strip.dir
 /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/wifi_connect/CMakeFiles/__idf_wifi_connect.dir
 /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/wifi_connect/CMakeFiles/edit_cache.dir
 /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/wifi_connect/CMakeFiles/rebuild_cache.dir

@@ -40,6 +40,7 @@ esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_tr
  /home/seanshea/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h \
  /home/seanshea/esp/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
  /home/seanshea/esp/esp-idf/components/log/include/esp_log_internal.h \
+ /home/seanshea/esp_32_projects/clock-proto-1.0/managed_components/espressif__mdns/include/mdns.h \
  /home/seanshea/esp/esp-idf/components/esp_netif/include/esp_netif.h \
  /home/seanshea/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h \
  /home/seanshea/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/machine/endian.h \

@@ -69,10 +69,10 @@ include esp-idf/partition_table/CMakeFiles/partition_table_bin.dir/progress.make
 esp-idf/partition_table/CMakeFiles/partition_table_bin: partition_table/partition-table.bin
 esp-idf/partition_table/CMakeFiles/partition_table_bin: partition_table/partition-table.bin
 
-partition_table/partition-table.bin: /home/seanshea/esp/esp-idf/components/partition_table/partitions_singleapp.csv
+partition_table/partition-table.bin: /home/seanshea/esp/esp-idf/components/partition_table/partitions_singleapp_large.csv
 partition_table/partition-table.bin: /home/seanshea/esp/esp-idf/components/partition_table/gen_esp32part.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/seanshea/esp_32_projects/clock-proto-1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../../partition_table/partition-table.bin"
-	cd /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/partition_table && /home/seanshea/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/seanshea/esp/esp-idf/components/partition_table/gen_esp32part.py -q --offset 0x8000 --flash-size 2MB -- /home/seanshea/esp/esp-idf/components/partition_table/partitions_singleapp.csv /home/seanshea/esp_32_projects/clock-proto-1.0/build/partition_table/partition-table.bin
+	cd /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/partition_table && /home/seanshea/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/seanshea/esp/esp-idf/components/partition_table/gen_esp32part.py -q --offset 0x8000 --flash-size 2MB -- /home/seanshea/esp/esp-idf/components/partition_table/partitions_singleapp_large.csv /home/seanshea/esp_32_projects/clock-proto-1.0/build/partition_table/partition-table.bin
 	cd /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/partition_table && /usr/bin/cmake -E echo "Partition table binary generated. Contents:"
 	cd /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/partition_table && /usr/bin/cmake -E echo "*******************************************************************************"
 	cd /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/partition_table && /home/seanshea/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/seanshea/esp/esp-idf/components/partition_table/gen_esp32part.py -q --offset 0x8000 --flash-size 2MB -- /home/seanshea/esp_32_projects/clock-proto-1.0/build/partition_table/partition-table.bin

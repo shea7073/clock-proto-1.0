@@ -1,0 +1,4 @@
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c: In function 'app_main':
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:44:15: warning: unused variable 'err' [-Wunused-variable]
+   44 |     esp_err_t err = wifi_connect_sta("RFG-WLAN", "!R@dius!", 10000);
+      |               ^~~

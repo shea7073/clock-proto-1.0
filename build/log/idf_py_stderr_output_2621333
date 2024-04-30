@@ -1,0 +1,12 @@
+In file included from /home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:6:
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.h:4:33: error: unknown type name 'alarm_container_t'
+    4 | esp_err_t init_alarm_containter(alarm_container_t * alarm_container);
+      |                                 ^~~~~~~~~~~~~~~~~
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c: In function 'addElement':
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:53:37: warning: assignment to 'alarm_t *' {aka 'struct alarm *'} from incompatible pointer type 'int *' [-Wincompatible-pointer-types]
+   53 |         alarm_container->alarm_list = newCont;
+      |                                     ^
+make[2]: *** [esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/build.make:76: esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/clock_manager.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4682: esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:136: all] Error 2

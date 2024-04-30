@@ -1,0 +1,116 @@
+[  0%] Built target custom_bundle
+[  0%] Built target memory_ld
+[  0%] Built target _project_elf_src
+[  0%] Built target partition_table_bin
+[  0%] Performing build step for 'bootloader'
+[  0%] Built target __idf_esp_https_ota
+[  1%] Built target __idf_esp_http_server
+[  1%] Built target _project_elf_src
+[  5%] Built target __idf_log
+[  2%] Built target __idf_esp_http_client
+[ 11%] Built target __idf_esp_rom
+[  2%] Built target __idf_tcp_transport
+[ 13%] Built target __idf_esp_common
+[  3%] Built target __idf_esp_gdbstub
+[ 22%] Built target __idf_esp_hw_support
+[  4%] Built target __idf_esp_eth
+[ 24%] Built target __idf_esp_system
+[  5%] Built target __idf_esp_adc
+[ 31%] Built target __idf_efuse
+[  6%] Built target __idf_esp-tls
+[ 54%] Built target __idf_bootloader_support
+[  6%] Built target __idf_http_parser
+[ 56%] Built target __idf_esp_bootloader_format
+[  7%] Built target __idf_esp_wifi
+[ 57%] Built target __idf_spi_flash
+[  7%] Built target __idf_esp_coex
+[ 64%] Built target __idf_hal
+[ 67%] Built target __idf_micro-ecc
+[ 16%] Built target __idf_wpa_supplicant
+[ 90%] Built target __idf_soc
+[ 93%] Built target __idf_xtensa
+[ 17%] Built target __idf_esp_netif
+[ 95%] Built target __idf_main
+[ 98%] Built target bootloader.elf
+[ 26%] Built target __idf_lwip
+[100%] Built target gen_project_binary
+[ 27%] Built target __idf_vfs
+[ 27%] Built target __idf_esp_phy
+Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.
+[100%] Built target bootloader_check_size
+[ 28%] Built target __idf_nvs_flash
+[100%] Built target app
+[ 28%] Built target __idf_esp_event
+[ 28%] No install step for 'bootloader'
+[ 28%] Built target __idf_esp_timer
+[ 28%] Completed 'bootloader'
+[ 29%] Built target __idf_esp_common
+[ 30%] Built target bootloader
+[ 30%] Built target __idf_cxx
+[ 32%] Built target __idf_newlib
+[ 34%] Built target __idf_freertos
+[ 38%] Built target __idf_esp_hw_support
+[ 41%] Built target __idf_soc
+[ 42%] Built target __idf_heap
+[ 42%] Built target __idf_log
+[ 46%] Built target __idf_hal
+[ 47%] Built target __idf_esp_rom
+[ 52%] Built target __idf_esp_system
+[ 52%] Built target __idf_pthread
+[ 54%] Built target __idf_spi_flash
+[ 54%] Built target __idf_app_update
+[ 55%] Built target __idf_esp_partition
+[ 57%] Built target __idf_bootloader_support
+[ 57%] Built target __idf_esp_app_format
+[ 57%] Built target __idf_esp_bootloader_format
+[ 60%] Built target mbedtls
+[ 61%] Built target mbedx509
+[ 71%] Built target mbedcrypto
+[ 71%] Built target p256m
+[ 71%] Built target everest
+[ 71%] Built target __idf_mbedtls
+[ 72%] Built target __idf_esp_pm
+[ 78%] Built target __idf_driver
+[ 78%] Built target __idf_esp_mm
+[ 79%] Built target __idf_efuse
+[ 79%] Built target __idf_esp_ringbuf
+[ 80%] Built target __idf_xtensa
+[ 80%] Built target __idf_wifi_connect
+[ 81%] Built target __idf_espcoredump
+[ 82%] Built target __idf_protobuf-c
+[ 82%] Built target __idf_esp_lcd
+[ 82%] Built target __idf_esp_hid
+[ 84%] Built target __idf_json
+[ 84%] Built target __idf_wear_levelling
+[ 84%] Built target __idf_clock_manager
+[ 84%] Built target __idf_app_trace
+[ 86%] Built target __idf_sdmmc
+[ 86%] Built target __idf_mqtt
+[ 87%] Built target __idf_unity
+[ 87%] Built target __idf_nvs_sec_provider
+[ 88%] Built target __idf_perfmon
+[ 90%] Built target __idf_console
+[ 91%] Built target __idf_spiffs
+[ 92%] Built target __idf_cmock
+[ 93%] Built target __idf_fatfs
+[ 95%] Built target __idf_protocomm
+[ 96%] Built target __idf_espressif__mdns
+[ 98%] Built target __idf_wifi_provisioning
+[ 98%] Built target __idf_esp_local_ctrl
+[100%] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[100%] Linking C static library libmain.a
+[100%] Built target __idf_main
+[100%] Generating ld/sections.ld
+[100%] Built target __ldgen_output_sections.ld
+[100%] Linking CXX executable clock-proto-1.0.elf
+[100%] Built target clock-proto-1.0.elf
+[100%] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/seanshea/esp_32_projects/clock-proto-1.0/build/clock-proto-1.0.bin
+[100%] Built target gen_project_binary
+clock-proto-1.0.bin binary size 0xe4fc0 bytes. Smallest app partition is 0x100000 bytes. 0x1b040 bytes (11%) free.
+[100%] Built target app_check_size
+[100%] Built target app

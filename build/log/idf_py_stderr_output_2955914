@@ -1,0 +1,4 @@
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c: In function 'on_set_alarm':
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:84:9: warning: unused variable 'ret' [-Wunused-variable]
+   84 |     int ret  = httpd_req_recv(req, data, recv_size);
+      |         ^~~

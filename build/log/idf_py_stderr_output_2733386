@@ -1,0 +1,3 @@
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:20:20: warning: 'BASE_PATH' defined but not used [-Wunused-variable]
+   20 | static const char *BASE_PATH = "/sdcard";
+      |                    ^~~~~~~~~

@@ -176,7 +176,9 @@ esp-idf/esp_system/ld/sections.ld: esp-idf/nvs_sec_provider/libnvs_sec_provider.
 esp-idf/esp_system/ld/sections.ld: esp-idf/perfmon/libperfmon.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/spiffs/libspiffs.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/wifi_provisioning/libwifi_provisioning.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/espressif__mdns/libespressif__mdns.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/main/libmain.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/clock_manager/libclock_manager.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/wifi_connect/libwifi_connect.a
 esp-idf/esp_system/ld/sections.ld: /home/seanshea/esp_32_projects/clock-proto-1.0/sdkconfig
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/seanshea/esp_32_projects/clock-proto-1.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ld/sections.ld"

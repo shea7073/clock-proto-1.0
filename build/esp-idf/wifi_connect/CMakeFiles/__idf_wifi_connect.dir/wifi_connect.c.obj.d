@@ -30,6 +30,9 @@ esp-idf/wifi_connect/CMakeFiles/__idf_wifi_connect.dir/wifi_connect.c.obj: \
  /home/seanshea/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/sys/_stdint.h \
  /home/seanshea/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/assert.h \
  /home/seanshea/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/sys/stdio.h \
+ /home/seanshea/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/string.h \
+ /home/seanshea/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/strings.h \
+ /home/seanshea/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/sys/string.h \
  /home/seanshea/esp/esp-idf/components/log/include/esp_log.h \
  /home/seanshea/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h \
  /home/seanshea/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h \

@@ -1,0 +1,24 @@
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c: In function 'add_alarm':
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:32:37: warning: assignment to 'alarm_t *' {aka 'struct alarm *'} from incompatible pointer type 'int *' [-Wincompatible-pointer-types]
+   32 |         alarm_container->alarm_list = newCont;
+      |                                     ^
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c: In function 'obtain_time':
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:41:5: error: unknown type name 'esp_sntp_config_t'
+   41 |     esp_sntp_config_t config = ESP_NETIF_SNTP_DEFAULT_CONFIG(CONFIG_SNTP_TIME_SERVER);
+      |     ^~~~~~~~~~~~~~~~~
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:41:32: error: implicit declaration of function 'ESP_NETIF_SNTP_DEFAULT_CONFIG' [-Werror=implicit-function-declaration]
+   41 |     esp_sntp_config_t config = ESP_NETIF_SNTP_DEFAULT_CONFIG(CONFIG_SNTP_TIME_SERVER);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:41:62: error: 'CONFIG_SNTP_TIME_SERVER' undeclared (first use in this function); did you mean 'CONFIG_MBEDTLS_TLS_SERVER'?
+   41 |     esp_sntp_config_t config = ESP_NETIF_SNTP_DEFAULT_CONFIG(CONFIG_SNTP_TIME_SERVER);
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                                              CONFIG_MBEDTLS_TLS_SERVER
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:41:62: note: each undeclared identifier is reported only once for each function it appears in
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:42:5: error: implicit declaration of function 'esp_netif_sntp_init'; did you mean 'esp_sntp_init'? [-Werror=implicit-function-declaration]
+   42 |     esp_netif_sntp_init(&config);
+      |     ^~~~~~~~~~~~~~~~~~~
+      |     esp_sntp_init
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/build.make:76: esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/clock_manager.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4682: esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

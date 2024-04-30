@@ -1,0 +1,17 @@
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c: In function 'on_default_url':
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:67:71: warning: passing argument 4 of 'fread' from incompatible pointer type [-Wincompatible-pointer-types]
+   67 |      while ((bytes_read = fread(buffer, sizeof(char), sizeof(buffer), buffer)) > 0) {
+      |                                                                       ^~~~~~
+      |                                                                       |
+      |                                                                       char *
+In file included from /home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:1:
+/home/seanshea/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/stdio.h:229:59: note: expected 'FILE * restrict' but argument is of type 'char *'
+  229 | size_t  fread (void *__restrict, size_t _size, size_t _n, FILE *__restrict);
+      |                                                           ^
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:67:33: error: passing argument 1 to 'restrict'-qualified parameter aliases with argument 4 [-Werror=restrict]
+   67 |      while ((bytes_read = fread(buffer, sizeof(char), sizeof(buffer), buffer)) > 0) {
+      |                                 ^~~~~~                                ~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4656: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

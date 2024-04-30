@@ -1,0 +1,14 @@
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c: In function 'on_default_url':
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:67:9: warning: unused variable 'bytes_read' [-Wunused-variable]
+   67 |     int bytes_read = 0;
+      |         ^~~~~~~~~~
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:65:10: warning: unused variable 'buffer' [-Wunused-variable]
+   65 |     char buffer[1024];
+      |          ^~~~~~
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:38:11: warning: unused variable 'ext' [-Wunused-variable]
+   38 |     char *ext = strrchr(req->uri, '.');
+      |           ^~~
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c: At top level:
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:20:20: warning: 'BASE_PATH' defined but not used [-Wunused-variable]
+   20 | static const char *BASE_PATH = "/sdcard";
+      |                    ^~~~~~~~~

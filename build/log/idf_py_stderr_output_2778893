@@ -1,0 +1,116 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d7e5c: app_main at /home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:173 (discriminator 1)
+[0m
+[0;33m0x4008a337: _esp_error_check_failed at /home/seanshea/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008191e: panic_abort at /home/seanshea/esp/esp-idf/components/esp_system/panic.c:472
+0x4008a341: esp_system_abort at /home/seanshea/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40092c91: abort at /home/seanshea/esp/esp-idf/components/newlib/abort.c:38
+0x4008a337: _esp_error_check_failed at /home/seanshea/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d7e5c: app_main at /home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:173 (discriminator 1)
+0x4016e3c7: main_task at /home/seanshea/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008ae4d: vPortTaskWrapper at /home/seanshea/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015f3b2: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x401568f5: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016ecbd: esp_log_writev at /home/seanshea/esp/esp-idf/components/log/log.c:215
+0x40091625: esp_log_write at /home/seanshea/esp/esp-idf/components/log/log.c:225
+0x400d7cbc: on_default_url at /home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:37 (discriminator 1)
+0x4010747f: httpd_uri at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_uri.c:329
+0x40107ce5: httpd_parse_req at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:667
+0x40107d84: httpd_req_new at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:795
+0x40106b14: httpd_sess_process at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:426
+0x40105d48: httpd_process_session at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_main.c:255
+0x40168883: httpd_sess_enum at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:50 (discriminator 1)
+0x4010651c: httpd_server at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_main.c:305
+0x4010658a: httpd_thread at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_main.c:327
+0x4008ae4d: vPortTaskWrapper at /home/seanshea/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d7e5c: app_main at /home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:173 (discriminator 1)
+[0m
+[0;33m0x4008a337: _esp_error_check_failed at /home/seanshea/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008191e: panic_abort at /home/seanshea/esp/esp-idf/components/esp_system/panic.c:472
+0x4008a341: esp_system_abort at /home/seanshea/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40092c91: abort at /home/seanshea/esp/esp-idf/components/newlib/abort.c:38
+0x4008a337: _esp_error_check_failed at /home/seanshea/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d7e5c: app_main at /home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:173 (discriminator 1)
+0x4016e3c7: main_task at /home/seanshea/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008ae4d: vPortTaskWrapper at /home/seanshea/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015f3b2: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x401568f5: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016ecbd: esp_log_writev at /home/seanshea/esp/esp-idf/components/log/log.c:215
+0x40091625: esp_log_write at /home/seanshea/esp/esp-idf/components/log/log.c:225
+0x400d7cbc: on_default_url at /home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:37 (discriminator 1)
+0x4010747f: httpd_uri at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_uri.c:329
+0x40107ce5: httpd_parse_req at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:667
+0x40107d84: httpd_req_new at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:795
+0x40106b14: httpd_sess_process at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:426
+0x40105d48: httpd_process_session at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_main.c:255
+0x40168883: httpd_sess_enum at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:50 (discriminator 1)
+0x4010651c: httpd_server at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_main.c:305
+0x4010658a: httpd_thread at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_main.c:327
+0x4008ae4d: vPortTaskWrapper at /home/seanshea/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d7e5c: app_main at /home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:173 (discriminator 1)
+[0m
+[0;33m0x4008a337: _esp_error_check_failed at /home/seanshea/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008191e: panic_abort at /home/seanshea/esp/esp-idf/components/esp_system/panic.c:472
+0x4008a341: esp_system_abort at /home/seanshea/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40092c91: abort at /home/seanshea/esp/esp-idf/components/newlib/abort.c:38
+0x4008a337: _esp_error_check_failed at /home/seanshea/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d7e5c: app_main at /home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:173 (discriminator 1)
+0x4016e3c7: main_task at /home/seanshea/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008ae4d: vPortTaskWrapper at /home/seanshea/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014fa: strlen in ROM
+0x4015f3b2: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1521
+0x401568f5: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016ecbd: esp_log_writev at /home/seanshea/esp/esp-idf/components/log/log.c:215
+0x40091625: esp_log_write at /home/seanshea/esp/esp-idf/components/log/log.c:225
+0x400d7cbc: on_default_url at /home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:37 (discriminator 1)
+0x4010747f: httpd_uri at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_uri.c:329
+0x40107ce5: httpd_parse_req at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:667
+0x40107d84: httpd_req_new at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_parse.c:795
+0x40106b14: httpd_sess_process at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:426
+0x40105d48: httpd_process_session at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_main.c:255
+0x40168883: httpd_sess_enum at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_sess.c:50 (discriminator 1)
+0x4010651c: httpd_server at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_main.c:305
+0x4010658a: httpd_thread at /home/seanshea/esp/esp-idf/components/esp_http_server/src/httpd_main.c:327
+0x4008ae4d: vPortTaskWrapper at /home/seanshea/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d7e5c: app_main at /home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:173 (discrimin

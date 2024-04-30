@@ -131,7 +131,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/seanshea/esp/esp-idf/components/openthread/lib/.git"
   "/home/seanshea/esp/esp-idf/components/openthread/openthread/.git"
   "/home/seanshea/esp/esp-idf/components/partition_table/CMakeLists.txt"
-  "/home/seanshea/esp/esp-idf/components/partition_table/partitions_singleapp.csv"
+  "/home/seanshea/esp/esp-idf/components/partition_table/partitions_singleapp_large.csv"
   "/home/seanshea/esp/esp-idf/components/partition_table/project_include.cmake"
   "/home/seanshea/esp/esp-idf/components/perfmon/CMakeLists.txt"
   "/home/seanshea/esp/esp-idf/components/protobuf-c/CMakeLists.txt"
@@ -175,6 +175,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/seanshea/esp/esp-idf/tools/cmake/version.cmake"
   "/home/seanshea/esp/esp-idf/tools/kconfig_new/confgen.py"
   "/home/seanshea/esp/esp-idf/tools/kconfig_new/config.env.in"
+  "../.git/HEAD"
+  "../.git/refs/heads/master"
   "../CMakeLists.txt"
   "CMakeFiles/3.22.1/CMakeASMCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
@@ -193,8 +195,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "flash_args"
   "flash_args.in"
   "ldgen_libraries.in"
+  "../components/clock_manager/CMakeLists.txt"
   "../components/wifi_connect/CMakeLists.txt"
   "../main/CMakeLists.txt"
+  "../main/idf_component.yml"
+  "../managed_components/espressif__mdns/CMakeLists.txt"
+  "../managed_components/espressif__mdns/idf_component.yml"
   "../sdkconfig"
   "/usr/share/cmake-3.22/Modules/CMakeASMInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
@@ -240,6 +246,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/git-data/HEAD"
+  "CMakeFiles/git-data/grabRef.cmake"
+  "CMakeFiles/git-data/head-ref"
   "CMakeFiles/git-data/HEAD"
   "CMakeFiles/git-data/grabRef.cmake"
   "CMakeFiles/git-data/head-ref"
@@ -348,7 +357,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "esp-idf/ulp/CMakeFiles/CMakeDirectoryInformation.cmake"
   "esp-idf/usb/CMakeFiles/CMakeDirectoryInformation.cmake"
   "esp-idf/wifi_provisioning/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "esp-idf/espressif__mdns/CMakeFiles/CMakeDirectoryInformation.cmake"
   "esp-idf/main/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "esp-idf/clock_manager/CMakeFiles/CMakeDirectoryInformation.cmake"
   "esp-idf/wifi_connect/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -462,6 +473,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/DependInfo.cmake"
   "esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/DependInfo.cmake"
   "esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/DependInfo.cmake"
+  "esp-idf/espressif__mdns/CMakeFiles/__idf_espressif__mdns.dir/DependInfo.cmake"
   "esp-idf/main/CMakeFiles/__idf_main.dir/DependInfo.cmake"
+  "esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/DependInfo.cmake"
   "esp-idf/wifi_connect/CMakeFiles/__idf_wifi_connect.dir/DependInfo.cmake"
   )

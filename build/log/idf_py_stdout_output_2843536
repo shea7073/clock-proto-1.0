@@ -1,0 +1,248 @@
+-- Building ESP-IDF components for target esp32
+Processing 2 dependencies:
+[1/2] espressif/mdns (1.2.5)
+[2/2] idf (5.2.0)
+-- Project sdkconfig file /home/seanshea/esp_32_projects/clock-proto-1.0/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "clock-proto-1.0" version: 2cab9a6-dirty
+-- Adding linker script /home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt clock_manager cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__mdns esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_connect wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/seanshea/esp/esp-idf/components/app_trace /home/seanshea/esp/esp-idf/components/app_update /home/seanshea/esp/esp-idf/components/bootloader /home/seanshea/esp/esp-idf/components/bootloader_support /home/seanshea/esp/esp-idf/components/bt /home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager /home/seanshea/esp/esp-idf/components/cmock /home/seanshea/esp/esp-idf/components/console /home/seanshea/esp/esp-idf/components/cxx /home/seanshea/esp/esp-idf/components/driver /home/seanshea/esp/esp-idf/components/efuse /home/seanshea/esp/esp-idf/components/esp-tls /home/seanshea/esp/esp-idf/components/esp_adc /home/seanshea/esp/esp-idf/components/esp_app_format /home/seanshea/esp/esp-idf/components/esp_bootloader_format /home/seanshea/esp/esp-idf/components/esp_coex /home/seanshea/esp/esp-idf/components/esp_common /home/seanshea/esp/esp-idf/components/esp_eth /home/seanshea/esp/esp-idf/components/esp_event /home/seanshea/esp/esp-idf/components/esp_gdbstub /home/seanshea/esp/esp-idf/components/esp_hid /home/seanshea/esp/esp-idf/components/esp_http_client /home/seanshea/esp/esp-idf/components/esp_http_server /home/seanshea/esp/esp-idf/components/esp_https_ota /home/seanshea/esp/esp-idf/components/esp_https_server /home/seanshea/esp/esp-idf/components/esp_hw_support /home/seanshea/esp/esp-idf/components/esp_lcd /home/seanshea/esp/esp-idf/components/esp_local_ctrl /home/seanshea/esp/esp-idf/components/esp_mm /home/seanshea/esp/esp-idf/components/esp_netif /home/seanshea/esp/esp-idf/components/esp_netif_stack /home/seanshea/esp/esp-idf/components/esp_partition /home/seanshea/esp/esp-idf/components/esp_phy /home/seanshea/esp/esp-idf/components/esp_pm /home/seanshea/esp/esp-idf/components/esp_psram /home/seanshea/esp/esp-idf/components/esp_ringbuf /home/seanshea/esp/esp-idf/components/esp_rom /home/seanshea/esp/esp-idf/components/esp_system /home/seanshea/esp/esp-idf/components/esp_timer /home/seanshea/esp/esp-idf/components/esp_wifi /home/seanshea/esp/esp-idf/components/espcoredump /home/seanshea/esp_32_projects/clock-proto-1.0/managed_components/espressif__mdns /home/seanshea/esp/esp-idf/components/esptool_py /home/seanshea/esp/esp-idf/components/fatfs /home/seanshea/esp/esp-idf/components/freertos /home/seanshea/esp/esp-idf/components/hal /home/seanshea/esp/esp-idf/components/heap /home/seanshea/esp/esp-idf/components/http_parser /home/seanshea/esp/esp-idf/components/idf_test /home/seanshea/esp/esp-idf/components/ieee802154 /home/seanshea/esp/esp-idf/components/json /home/seanshea/esp/esp-idf/components/log /home/seanshea/esp/esp-idf/components/lwip /home/seanshea/esp_32_projects/clock-proto-1.0/main /home/seanshea/esp/esp-idf/components/mbedtls /home/seanshea/esp/esp-idf/components/mqtt /home/seanshea/esp/esp-idf/components/newlib /home/seanshea/esp/esp-idf/components/nvs_flash /home/seanshea/esp/esp-idf/components/nvs_sec_provider /home/seanshea/esp/esp-idf/components/openthread /home/seanshea/esp/esp-idf/components/partition_table /home/seanshea/esp/esp-idf/components/perfmon /home/seanshea/esp/esp-idf/components/protobuf-c /home/seanshea/esp/esp-idf/components/protocomm /home/seanshea/esp/esp-idf/components/pthread /home/seanshea/esp/esp-idf/components/sdmmc /home/seanshea/esp/esp-idf/components/soc /home/seanshea/esp/esp-idf/components/spi_flash /home/seanshea/esp/esp-idf/components/spiffs /home/seanshea/esp/esp-idf/components/tcp_transport /home/seanshea/esp/esp-idf/components/ulp /home/seanshea/esp/esp-idf/components/unity /home/seanshea/esp/esp-idf/components/usb /home/seanshea/esp/esp-idf/components/vfs /home/seanshea/esp/esp-idf/components/wear_levelling /home/seanshea/esp_32_projects/clock-proto-1.0/components/wifi_connect /home/seanshea/esp/esp-idf/components/wifi_provisioning /home/seanshea/esp/esp-idf/components/wpa_supplicant /home/seanshea/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/seanshea/esp_32_projects/clock-proto-1.0/build
+[  0%] Built target partition_table_bin
+[  0%] Built target _project_elf_src
+[  0%] Built target memory_ld
+[  0%] Built target custom_bundle
+Consolidate compiler generated dependencies of target __idf_esp_https_ota
+[  0%] Performing build step for 'bootloader'
+[  0%] Built target __idf_esp_https_ota
+Consolidate compiler generated dependencies of target __idf_esp_http_server
+[  1%] Built target __idf_esp_http_server
+Consolidate compiler generated dependencies of target __idf_esp_http_client
+[  2%] Built target __idf_esp_http_client
+Consolidate compiler generated dependencies of target __idf_tcp_transport
+[  2%] Built target __idf_tcp_transport
+Scanning dependencies of target __idf_esp_gdbstub
+Consolidate compiler generated dependencies of target __idf_esp_gdbstub
+[  3%] Built target __idf_esp_gdbstub
+Consolidate compiler generated dependencies of target __idf_esp_eth
+[  4%] Built target __idf_esp_eth
+Consolidate compiler generated dependencies of target __idf_esp_adc
+[  5%] Built target __idf_esp_adc
+Consolidate compiler generated dependencies of target __idf_esp-tls
+[  6%] Built target __idf_esp-tls
+Consolidate compiler generated dependencies of target __idf_http_parser
+[  6%] Built target __idf_http_parser
+Consolidate compiler generated dependencies of target __idf_esp_wifi
+[  7%] Built target __idf_esp_wifi
+Consolidate compiler generated dependencies of target __idf_esp_coex
+[  7%] Built target __idf_esp_coex
+Consolidate compiler generated dependencies of target __idf_wpa_supplicant
+[ 16%] Built target __idf_wpa_supplicant
+Consolidate compiler generated dependencies of target __idf_esp_netif
+[ 17%] Built target __idf_esp_netif
+Consolidate compiler generated dependencies of target __idf_lwip
+[ 26%] Built target __idf_lwip
+Consolidate compiler generated dependencies of target __idf_vfs
+[ 27%] Built target __idf_vfs
+Consolidate compiler generated dependencies of target __idf_esp_phy
+[ 27%] Built target __idf_esp_phy
+Consolidate compiler generated dependencies of target __idf_nvs_flash
+[ 28%] Built target __idf_nvs_flash
+Consolidate compiler generated dependencies of target __idf_esp_event
+[ 28%] Built target __idf_esp_event
+Consolidate compiler generated dependencies of target __idf_esp_timer
+[ 28%] Built target __idf_esp_timer
+Consolidate compiler generated dependencies of target __idf_esp_common
+[ 29%] Built target __idf_esp_common
+Consolidate compiler generated dependencies of target __idf_cxx
+[ 29%] Built target __idf_cxx
+-- Building ESP-IDF components for target esp32
+Consolidate compiler generated dependencies of target __idf_newlib
+[ 31%] Built target __idf_newlib
+Scanning dependencies of target __idf_freertos
+Consolidate compiler generated dependencies of target __idf_freertos
+[ 33%] Built target __idf_freertos
+Consolidate compiler generated dependencies of target __idf_esp_hw_support
+[ 37%] Built target __idf_esp_hw_support
+Consolidate compiler generated dependencies of target __idf_soc
+[ 40%] Built target __idf_soc
+Consolidate compiler generated dependencies of target __idf_heap
+[ 41%] Built target __idf_heap
+Consolidate compiler generated dependencies of target __idf_log
+[ 41%] Built target __idf_log
+Consolidate compiler generated dependencies of target __idf_hal
+[ 45%] Built target __idf_hal
+Scanning dependencies of target __idf_esp_rom
+Consolidate compiler generated dependencies of target __idf_esp_rom
+[ 46%] Built target __idf_esp_rom
+Scanning dependencies of target __idf_esp_system
+Consolidate compiler generated dependencies of target __idf_esp_system
+[ 51%] Built target __idf_esp_system
+Consolidate compiler generated dependencies of target __idf_pthread
+[ 51%] Built target __idf_pthread
+Consolidate compiler generated dependencies of target __idf_spi_flash
+[ 53%] Built target __idf_spi_flash
+Consolidate compiler generated dependencies of target __idf_app_update
+[ 53%] Built target __idf_app_update
+Consolidate compiler generated dependencies of target __idf_esp_partition
+[ 54%] Built target __idf_esp_partition
+Consolidate compiler generated dependencies of target __idf_bootloader_support
+[ 56%] Built target __idf_bootloader_support
+Consolidate compiler generated dependencies of target __idf_esp_app_format
+[ 56%] Built target __idf_esp_app_format
+Consolidate compiler generated dependencies of target __idf_esp_bootloader_format
+[ 56%] Built target __idf_esp_bootloader_format
+Consolidate compiler generated dependencies of target mbedtls
+[ 59%] Built target mbedtls
+Consolidate compiler generated dependencies of target mbedx509
+[ 60%] Built target mbedx509
+Consolidate compiler generated dependencies of target mbedcrypto
+-- Project sdkconfig file /home/seanshea/esp_32_projects/clock-proto-1.0/sdkconfig
+[ 70%] Built target mbedcrypto
+Consolidate compiler generated dependencies of target p256m
+[ 70%] Built target p256m
+Consolidate compiler generated dependencies of target everest
+[ 70%] Built target everest
+Scanning dependencies of target __idf_mbedtls
+Consolidate compiler generated dependencies of target __idf_mbedtls
+[ 70%] Built target __idf_mbedtls
+Consolidate compiler generated dependencies of target __idf_esp_pm
+[ 71%] Built target __idf_esp_pm
+-- Compiler supported targets: xtensa-esp-elf
+Consolidate compiler generated dependencies of target __idf_driver
+[ 77%] Built target __idf_driver
+Consolidate compiler generated dependencies of target __idf_esp_mm
+[ 77%] Built target __idf_esp_mm
+Consolidate compiler generated dependencies of target __idf_efuse
+[ 78%] Built target __idf_efuse
+Consolidate compiler generated dependencies of target __idf_esp_ringbuf
+-- Adding linker script /home/seanshea/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+[ 78%] Built target __idf_esp_ringbuf
+-- Bootloader project name: "bootloader" version: 1
+Scanning dependencies of target __idf_xtensa
+Consolidate compiler generated dependencies of target __idf_xtensa
+[ 79%] Built target __idf_xtensa
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+Consolidate compiler generated dependencies of target __idf_protobuf-c
+Consolidate compiler generated dependencies of target __idf_wifi_connect
+Consolidate compiler generated dependencies of target __idf_app_trace
+Consolidate compiler generated dependencies of target __idf_wear_levelling
+Consolidate compiler generated dependencies of target __idf_esp_hid
+Consolidate compiler generated dependencies of target __idf_nvs_sec_provider
+Consolidate compiler generated dependencies of target __idf_console
+Consolidate compiler generated dependencies of target __idf_perfmon
+Consolidate compiler generated dependencies of target __idf_clock_manager
+Consolidate compiler generated dependencies of target __idf_spiffs
+Consolidate compiler generated dependencies of target __idf_unity
+Consolidate compiler generated dependencies of target __idf_espcoredump
+Consolidate compiler generated dependencies of target __idf_esp_lcd
+-- Adding linker script /home/seanshea/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script /home/seanshea/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+Consolidate compiler generated dependencies of target __idf_mqtt
+Consolidate compiler generated dependencies of target __idf_json
+[ 79%] Built target __idf_nvs_sec_provider
+[ 79%] Built target __idf_protobuf-c
+[ 79%] Built target __idf_app_trace
+[ 79%] Built target __idf_wifi_connect
+Consolidate compiler generated dependencies of target __idf_sdmmc
+[ 80%] Built target __idf_perfmon
+[ 81%] Built target __idf_wear_levelling
+[ 81%] Built target __idf_clock_manager
+[ 82%] Built target __idf_espcoredump
+[ 82%] Built target __idf_esp_hid
+[ 84%] Built target __idf_spiffs
+[ 84%] Built target __idf_unity
+[ 86%] Built target __idf_console
+[ 87%] Built target __idf_esp_lcd
+[ 88%] Built target __idf_mqtt
+[ 89%] Built target __idf_json
+Consolidate compiler generated dependencies of target __idf_cmock
+[ 90%] Built target __idf_sdmmc
+Consolidate compiler generated dependencies of target __idf_protocomm
+Consolidate compiler generated dependencies of target __idf_espressif__mdns
+[ 91%] Built target __idf_cmock
+[ 93%] Built target __idf_protocomm
+[ 94%] Built target __idf_espressif__mdns
+-- Components: bootloader bootloader_support efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /home/seanshea/esp/esp-idf/components/bootloader /home/seanshea/esp/esp-idf/components/bootloader_support /home/seanshea/esp/esp-idf/components/efuse /home/seanshea/esp/esp-idf/components/esp_app_format /home/seanshea/esp/esp-idf/components/esp_bootloader_format /home/seanshea/esp/esp-idf/components/esp_common /home/seanshea/esp/esp-idf/components/esp_hw_support /home/seanshea/esp/esp-idf/components/esp_rom /home/seanshea/esp/esp-idf/components/esp_system /home/seanshea/esp/esp-idf/components/esptool_py /home/seanshea/esp/esp-idf/components/freertos /home/seanshea/esp/esp-idf/components/hal /home/seanshea/esp/esp-idf/components/log /home/seanshea/esp/esp-idf/components/bootloader/subproject/main /home/seanshea/esp/esp-idf/components/bootloader/subproject/components/micro-ecc /home/seanshea/esp/esp-idf/components/newlib /home/seanshea/esp/esp-idf/components/partition_table /home/seanshea/esp/esp-idf/components/soc /home/seanshea/esp/esp-idf/components/spi_flash /home/seanshea/esp/esp-idf/components/xtensa
+-- Configuring done
+Consolidate compiler generated dependencies of target __idf_fatfs
+Consolidate compiler generated dependencies of target __idf_esp_local_ctrl
+Consolidate compiler generated dependencies of target __idf_wifi_provisioning
+[ 95%] Built target __idf_fatfs
+[ 96%] Built target __idf_esp_local_ctrl
+[ 97%] Built target __idf_wifi_provisioning
+Consolidate compiler generated dependencies of target __idf_main
+[ 98%] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+-- Generating done
+-- Build files have been written to: /home/seanshea/esp_32_projects/clock-proto-1.0/build/bootloader
+Consolidate compiler generated dependencies of target __idf_log
+[  5%] Built target __idf_log
+[  5%] Built target _project_elf_src
+Scanning dependencies of target __idf_esp_rom
+Consolidate compiler generated dependencies of target __idf_esp_rom
+[ 11%] Built target __idf_esp_rom
+[ 98%] Linking C static library libmain.a
+Consolidate compiler generated dependencies of target __idf_esp_common
+[ 13%] Built target __idf_esp_common
+Consolidate compiler generated dependencies of target __idf_esp_hw_support
+[ 22%] Built target __idf_esp_hw_support
+[ 98%] Built target __idf_main
+Consolidate compiler generated dependencies of target __idf_esp_system
+[ 98%] Generating ld/sections.ld
+[ 24%] Built target __idf_esp_system
+Consolidate compiler generated dependencies of target __idf_efuse
+[ 31%] Built target __idf_efuse
+Consolidate compiler generated dependencies of target __idf_bootloader_support
+[ 54%] Built target __idf_bootloader_support
+Consolidate compiler generated dependencies of target __idf_esp_bootloader_format
+[ 56%] Built target __idf_esp_bootloader_format
+Consolidate compiler generated dependencies of target __idf_spi_flash
+[ 57%] Built target __idf_spi_flash
+Consolidate compiler generated dependencies of target __idf_hal
+[ 64%] Built target __idf_hal
+Consolidate compiler generated dependencies of target __idf_micro-ecc
+[ 67%] Built target __idf_micro-ecc
+Consolidate compiler generated dependencies of target __idf_soc
+[ 90%] Built target __idf_soc
+Consolidate compiler generated dependencies of target __idf_xtensa
+[ 93%] Built target __idf_xtensa
+Consolidate compiler generated dependencies of target __idf_main
+[ 95%] Built target __idf_main
+Consolidate compiler generated dependencies of target bootloader.elf
+[ 98%] Built target bootloader.elf
+[100%] Built target gen_project_binary
+Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.
+[100%] Built target bootloader_check_size
+[100%] Built target app
+[ 98%] No install step for 'bootloader'
+[ 98%] Completed 'bootloader'
+[100%] Built target bootloader
+[100%] Built target __ldgen_output_sections.ld
+Consolidate compiler generated dependencies of target clock-proto-1.0.elf
+[100%] Linking CXX executable clock-proto-1.0.elf
+[100%] Built target clock-proto-1.0.elf
+[100%] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/seanshea/esp_32_projects/clock-proto-1.0/build/clock-proto-1.0.bin
+[100%] Built target gen_project_binary
+clock-proto-1.0.bin binary size 0xe60d0 bytes. Smallest app partition is 0x100000 bytes. 0x19f30 bytes (10%) free.
+[100%] Built target app_check_size
+[100%] Built target app

@@ -30,6 +30,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/DependInfo.cmake"
   "/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/DependInfo.cmake"
   "/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/DependInfo.cmake"
+  "/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/espressif__mdns/CMakeFiles/__idf_espressif__mdns.dir/DependInfo.cmake"
   "/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/console/CMakeFiles/__idf_console.dir/DependInfo.cmake"
   "/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/pthread/CMakeFiles/__idf_pthread.dir/DependInfo.cmake"
   "/home/seanshea/esp_32_projects/clock-proto-1.0/build/esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/DependInfo.cmake"

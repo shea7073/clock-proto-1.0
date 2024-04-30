@@ -1,0 +1,7 @@
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:9:10: fatal error: esp_netif_sntp.h: No such file or directory
+    9 | #include "esp_netif_sntp.h"
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/build.make:76: esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/clock_manager.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4682: esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

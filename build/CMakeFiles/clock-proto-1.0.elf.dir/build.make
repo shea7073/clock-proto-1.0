@@ -159,7 +159,9 @@ clock-proto-1.0.elf: esp-idf/nvs_sec_provider/libnvs_sec_provider.a
 clock-proto-1.0.elf: esp-idf/perfmon/libperfmon.a
 clock-proto-1.0.elf: esp-idf/spiffs/libspiffs.a
 clock-proto-1.0.elf: esp-idf/wifi_provisioning/libwifi_provisioning.a
+clock-proto-1.0.elf: esp-idf/espressif__mdns/libespressif__mdns.a
 clock-proto-1.0.elf: esp-idf/main/libmain.a
+clock-proto-1.0.elf: esp-idf/clock_manager/libclock_manager.a
 clock-proto-1.0.elf: esp-idf/wifi_connect/libwifi_connect.a
 clock-proto-1.0.elf: esp-idf/app_trace/libapp_trace.a
 clock-proto-1.0.elf: esp-idf/app_trace/libapp_trace.a
@@ -178,9 +180,10 @@ clock-proto-1.0.elf: esp-idf/perfmon/libperfmon.a
 clock-proto-1.0.elf: esp-idf/spiffs/libspiffs.a
 clock-proto-1.0.elf: esp-idf/wifi_provisioning/libwifi_provisioning.a
 clock-proto-1.0.elf: esp-idf/protocomm/libprotocomm.a
-clock-proto-1.0.elf: esp-idf/console/libconsole.a
 clock-proto-1.0.elf: esp-idf/protobuf-c/libprotobuf-c.a
 clock-proto-1.0.elf: esp-idf/json/libjson.a
+clock-proto-1.0.elf: esp-idf/espressif__mdns/libespressif__mdns.a
+clock-proto-1.0.elf: esp-idf/console/libconsole.a
 clock-proto-1.0.elf: esp-idf/xtensa/libxtensa.a
 clock-proto-1.0.elf: esp-idf/esp_ringbuf/libesp_ringbuf.a
 clock-proto-1.0.elf: esp-idf/efuse/libefuse.a

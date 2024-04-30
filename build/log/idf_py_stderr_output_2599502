@@ -1,0 +1,17 @@
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:35:1: error: unknown type name 'esp_err_t'
+   35 | esp_err_t init_alarm_containter(alarm_container_t * alarm_container) {
+      | ^~~~~~~~~
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c: In function 'init_alarm_containter':
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:38:16: error: 'ESP_OK' undeclared (first use in this function); did you mean 'ESP_LOGD'?
+   38 |         return ESP_OK;
+      |                ^~~~~~
+      |                ESP_LOGD
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:38:16: note: each undeclared identifier is reported only once for each function it appears in
+/home/seanshea/esp_32_projects/clock-proto-1.0/components/clock_manager/clock_manager.c:40:1: error: control reaches end of non-void function [-Werror=return-type]
+   40 | }
+      | ^
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/build.make:76: esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/clock_manager.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4682: esp-idf/clock_manager/CMakeFiles/__idf_clock_manager.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:136: all] Error 2

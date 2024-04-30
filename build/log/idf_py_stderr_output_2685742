@@ -1,0 +1,3 @@
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:79:13: warning: 'init_server' defined but not used [-Wunused-function]
+   79 | static void init_server() {
+      |             ^~~~~~~~~~~

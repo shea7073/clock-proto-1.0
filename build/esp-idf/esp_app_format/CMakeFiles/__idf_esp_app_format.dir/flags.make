@@ -8,5 +8,5 @@ C_INCLUDES = -I/home/seanshea/esp_32_projects/clock-proto-1.0/build/config -I/ho
 
 C_FLAGS = -mlongcalls -Wno-frame-address  -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/seanshea/esp_32_projects/clock-proto-1.0=. -fmacro-prefix-map=/home/seanshea/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration
 
-# Custom defines: esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj_DEFINES = PROJECT_VER="1"; PROJECT_NAME="clock-proto-1.0"
+# Custom defines: esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj_DEFINES = PROJECT_VER="2cab9a6-dirty"; PROJECT_NAME="clock-proto-1.0"
 

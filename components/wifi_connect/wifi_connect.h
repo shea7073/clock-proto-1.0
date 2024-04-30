@@ -3,5 +3,7 @@
 
     void wifi_connect_init(void);
 
+    esp_err_t wifi_connect_sta(char* ssid, char* pass, int timeout);
+
 
 #endif

@@ -1,0 +1,19 @@
+In file included from /home/seanshea/esp/esp-idf/components/nvs_flash/include/nvs.h:13,
+                 from /home/seanshea/esp/esp-idf/components/nvs_flash/include/nvs_flash.h:13,
+                 from /home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:2:
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c: In function 'app_main':
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:80:45: error: 'BASE_PATH' undeclared (first use in this function)
+   80 |     ESP_ERROR_CHECK(esp_vfs_fat_sdspi_mount(BASE_PATH, &host, &slot_config, &mount_config, &card));
+      |                                             ^~~~~~~~~
+/home/seanshea/esp/esp-idf/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/seanshea/esp_32_projects/clock-proto-1.0/main/main.c:80:45: note: each undeclared identifier is reported only once for each function it appears in
+   80 |     ESP_ERROR_CHECK(esp_vfs_fat_sdspi_mount(BASE_PATH, &host, &slot_config, &mount_config, &card));
+      |                                             ^~~~~~~~~
+/home/seanshea/esp/esp-idf/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4635: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

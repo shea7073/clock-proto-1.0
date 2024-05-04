@@ -12,16 +12,59 @@
 #include "clock_manager.h"
 #include "cJSON.h"
 
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "driver/gpio.h"
+
+
 #define TAG "Clock-Main"
 
-#define PIN_CS 4
-#define PIN_MOSI 5
-#define PIN_CLK 18
-#define PIN_MISO 19
+#define PIN_CS GPIO_NUM_4
+#define PIN_MOSI GPIO_NUM_5
+#define PIN_CLK GPIO_NUM_18
+#define PIN_MISO GPIO_NUM_19
+
+// 18 and 19 need to be reassigned
+// #define LATCH GPIO_NUM_18
+// #define CLOCK GPIO_NUM_19
+
+#define LATCH GPIO_NUM_22
+#define CLOCK GPIO_NUM_23
+#define DATA  GPIO_NUM_21
+
+// these are set backwards so they start at dot pixel and move from G-A
+int digits_rev[10][8] =  {
+    {0, 0, 1, 1, 1, 1, 1, 1}, // 0
+    {0, 0, 0, 0, 0, 1, 1, 0}, // 1
+    {0, 1, 0, 1, 1, 0, 1, 1}, // 2
+    {0, 1, 0, 0, 1, 1, 1, 1}, // 3
+    {0, 1, 1, 0, 0, 1, 1, 0}, // 4
+    {0, 1, 1, 0, 1, 1, 0, 1}, // 5
+    {0, 1, 1, 1, 1, 1, 0, 1}, // 6
+    {0, 0, 0, 0, 0, 1, 1, 1}, // 7
+    {0, 1, 1, 1, 1, 1, 1, 1}, // 8
+    {0, 1, 1, 0, 1, 1, 1, 1}  // 9
+};
 
 alarm_container_t alarm_container;
 clock_manager_t clock_manager;
 
+void init_display_gpio(void) {
+
+    gpio_set_direction(LATCH, GPIO_MODE_OUTPUT);
+    gpio_set_level(LATCH, 0);
+    vTaskDelay(1 / portTICK_PERIOD_MS);
+
+    gpio_set_direction(CLOCK, GPIO_MODE_OUTPUT);
+    gpio_set_level(CLOCK, 0);
+    vTaskDelay(1 / portTICK_PERIOD_MS);
+    
+
+    gpio_set_direction(DATA, GPIO_MODE_OUTPUT);
+    gpio_set_level(DATA, 0);
+    vTaskDelay(1 / portTICK_PERIOD_MS);
+
+}
 
 void start_mdns() {
     mdns_init();
@@ -29,7 +72,7 @@ void start_mdns() {
     mdns_instance_name_set("Alarm-Proto-1.0");
 }
 
-
+// URL handlers
 
 static esp_err_t on_default_url(httpd_req_t *req) {
     ESP_LOGI(TAG, "URI: %s", req->uri);
@@ -231,32 +274,17 @@ void app_main(void)
     // start http server
     init_server();
 
+    // set current time
     set_time();
     
+    // initialize the alarm container
     init_alarm_container(&alarm_container);
     
+    // add alarm container to the clock manager struct
     clock_manager.alarm_container = &alarm_container;
-    // alarm_t alarm;
-    // alarm.hours = 7;
-    // alarm.minutes = 35;
-    // alarm.isActive = true;
-    // add_alarm(clock_manager.alarm_container, alarm);
-    // add_alarm(clock_manager.alarm_container, alarm);
-    // add_alarm(clock_manager.alarm_container, alarm);
-    // add_alarm(clock_manager.alarm_container, alarm);
-    // add_alarm(clock_manager.alarm_container, alarm);
-    // add_alarm(clock_manager.alarm_container, alarm);
-    // add_alarm(clock_manager.alarm_container, alarm);
-    // add_alarm(clock_manager.alarm_container, alarm);
-    // add_alarm(clock_manager.alarm_container, alarm);
-    // add_alarm(clock_manager.alarm_container, alarm);
-    // add_alarm(clock_manager.alarm_container, alarm);
-    
 
-
-    //delete_alarm(clock_manager.alarm_container, alarm);
-
-    //ESP_LOGI(TAG, "num alarms: %d", clock_manager.alarm_container->curr_num_alarms);
+    // initialize gpios for 7 segment display control
+    init_display_gpio();
 
 
 // ------------------------------
